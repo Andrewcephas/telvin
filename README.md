@@ -1,99 +1,31 @@
-# BlueTell - Full Stack Business Platform
+# BlueTell - Interactive Static Website
 
-A modern, responsive business website for BlueTell with full-stack implementation across multiple technologies.
+A modern, interactive static website for BlueTell with animations, games, and engaging features.
 
 ## Features
 
-- **Modern Frontend**: Responsive HTML5, CSS3 with CSS Grid/Flexbox, Vanilla JavaScript
-- **Interactive UI**: Smooth animations, mobile menu, form validation
-- **Multiple Backends**: Flask (Python), Express (Node.js), ASP.NET Core (C#), Native C++ server
-- **Database**: SQLite with comprehensive schema for users, contacts, services
-- **API Ready**: RESTful endpoints for contact forms and inquiries
+- **Interactive Animations**: Typing effects, car animations on roads
+- **Mini Games**: Typing test game
+- **Smooth Animations**: CSS animations and JavaScript interactions
+- **Responsive Design**: Works on all devices
+- **Modern UI**: Clean, professional design
 
 ## Tech Stack
 
-### Frontend
 - HTML5
-- CSS3 (Custom Properties, Animations)
-- JavaScript (ES6+)
+- CSS3 (Animations, Keyframes)
+- Vanilla JavaScript
 - Font Awesome Icons
 - Google Fonts (Inter)
 
-### Backend Options
-- **Python/Flask** - `backend/python/app.py`
-- **Node.js/Express** - `backend/node/server.js`
-- **C# ASP.NET Core** - `backend/csharp/Program.cs`
-- **C++** - `backend/cpp/main.cpp`
-
-### Database
-- **SQLite** - `db/schema.sql`
-
-## Project Structure
-
-```
-TELVIN/
-├── index.html          # Main landing page
-├── css/
-│   └── style.css       # All styles
-├── js/
-│   └── app.js          # Frontend interactivity
-├── db/
-│   └── schema.sql      # Database schema
-├── backend/
-│   ├── python/         # Flask backend
-│   ├── node/           # Express backend
-│   ├── csharp/         # ASP.NET Core backend
-│   └── cpp/            # C++ backend
-└── assets/             # Images and media
-```
-
 ## Getting Started
 
-### Frontend
-Simply open `index.html` in your browser or serve with a local server.
+Simply open `index.html` in your browser.
 
-```bash
-# Using Python
-python -m http.server 8000
+## Live Features
 
-# Using Node
-npx serve .
-```
-
-### Python/Flask Backend
-```bash
-cd backend/python
-pip install -r requirements.txt
-python app.py
-```
-
-### Node.js/Express Backend
-```bash
-cd backend/node
-npm install
-npm start
-```
-
-### C# ASP.NET Core Backend
-```bash
-cd backend/csharp
-dotnet restore
-dotnet run
-```
-
-## Database Setup
-
-```bash
-sqlite3 db/bluetell.db < db/schema.sql
-```
-
-## API Endpoints
-
-- `POST /api/contact` - Submit contact form
-- `GET /api/services` - Get services
-- `POST /api/subscribe` - Newsletter subscription
-- `GET /api/health` - Health check
-
-## License
-
-© 2026 BlueTell. All rights reserved.
+- Typing speed test game
+- Animated cars on roads
+- Smooth scroll animations
+- Interactive contact form
+- Mobile responsive menu
