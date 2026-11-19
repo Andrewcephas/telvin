@@ -1,0 +1,112 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Buetell</title>
+        <style> 
+            body {
+                background-color: skyblue;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding-top: 50px;
+                color: white;
+            }
+           button {
+            margin:10px;
+            padding:15px 30px;
+            border:2px solid green;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: rgb(163, 229, 64);
+            transition: 0.3s;
+            }
+            button:hover {
+                background-color: green;
+                color: white;
+                transform: scale(1.1);
+                box-shadow: 0 4px 8px rgb(146, 187, 45);
+                transition: 0.3s;
+            }
+            .login {
+                background-color:rgb(197, 68, 169);
+                color: blue;
+                padding: 25px;
+                border-radius: 5px;
+                box-shadow: 0 4px 10px grey;
+                margin: 20px auto;
+                width: 300px;
+            }
+            input{width: 90%;
+                padding: 12px;
+                border: 1px solid skyblue;
+                border-radius: 5px;
+                outline: none;
+            }
+            input:focus {
+                border: 2px solid blue;
+            }        </style>
+    </head>
+    <body>
+        <header>
+            <h1>BlueTell</h1>
+            <p1>Your Partner for Your Growth</p1>
+        </header>
+        <nav>
+            <a href="# home">home</a>
+            <a herf="# about">about</a>
+        </nav>
+        <main>
+            <section id="home">
+                <h2>Welcome to BlueTell</h2>
+                <p>We help business grow through innovative solutions</p>
+            </section>
+            <section id="about">
+                <h2>About BlueTell</h2>
+                <p>We are a company that offers simplicity and trust to growing Business</p>
+            </section>
+            <input type="text" id="username" placeholder="Enter username">
+            <input type="password" id="password" placeholder="Enter password">
+            <button onclick="login()">Login</button>
+        </main>
+        <section class="login">
+            <h2>create your BlueTell account</h2>
+            <form onsubmit="return register()">
+                <input id="username1" type="text" placeholder="Enter username" required>
+                <br></br>
+                <input type="email1" placeholder="Enter email" required>
+                <br></br>
+                <input id="password1" type="password" placeholder="Enter password" required>
+                <br></br>
+                <button type="submit1">Register</button>
+                <button type="reset1">clear form</button>
+            </form>
+            <script>
+            function login() {
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+                if (username === "telvin" && password === "Galatians013") {
+                    alert("welcome to BlueTell");
+                    } else {
+                        alert("Invalid credentials");
+                    }
+            }
+            </script>
+            <script>
+            function register() {
+                  let username = 
+                document.getElementById("new user").value = "";
+                  let password= 
+                  document.getElementById("new password").value = ""; 
+                  if (username && password) {
+                    alert("Registration successful!");
+                  } else {
+                    alert("😅Please fill in all fields.");
+                  } 
+                }
+            </script>
+                
+        </section>
+        <footer>
+            <p1>&copy 2026 BlueTell all Rights are Reserved.</p1>
+        </footer>
+    </body>
+</html>
